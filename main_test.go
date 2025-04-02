@@ -7,4 +7,5 @@ func TestSoma(t *testing.T) {
 	if total != 3 {
 		t.Errorf("Resultado esperado da soma Soma(1, 2) = %d, deveria ser 3", total)
 	}
+
 }

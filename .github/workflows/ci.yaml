@@ -1,5 +1,9 @@
 name: ci-golang-workflow # Nome do workflow
-on: [push] # Evento que aciona o workflow
+on: 
+  pull_request:
+    branches:
+      - develop
+ 
 jobs:
   check-application: 
     runs-on: ubuntu-latest
