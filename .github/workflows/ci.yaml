@@ -5,9 +5,7 @@ on:
       - develop
 
 strategy:
-# matriz de testes
   matrix:
-# versoes do go
     go: ['1.14', '1.24.2']
 jobs:
   check-application: 
@@ -23,4 +21,3 @@ jobs:
       - run: go test
       # roda o aplicativo
       - run: go run main.go
-# Good luck ! ^_^ -
