@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:  # <-- Mover strategy para dentro do job
       matrix:
-        go: ['1.24.2', '1.15']
+        go: ['1.14', '1.15']
     steps:
       # Verifica se o codigo esta ok
       - uses: actions/checkout@v2
