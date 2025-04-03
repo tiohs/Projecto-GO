@@ -11,13 +11,9 @@ jobs:
   check-application: 
     runs-on: ubuntu-latest
     steps:
-      # Verifica se o codigo esta ok
       - uses: actions/checkout@v2
-      # prepara o ambiente para rodar o go
       - uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go }}
-      # roda os testes
       - run: go test
-      # roda o aplicativo
       - run: go run main.go
